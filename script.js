@@ -4,7 +4,7 @@ document.getElementById('shorten-form').addEventListener('submit', async (e) => 
     const resultElement = document.getElementById('result');
 
     try {
-        const response = await fetch('https://seu-backend.onrender.com/shorten', {
+        const response = await fetch('https://shortlink-backend-qxre.onrender.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ url: urlInput })
